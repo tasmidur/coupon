@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5aa33c4c9c59a25291445d8226153066",
+    "content-hash": "478713a3f7816c3cfd0540d158c09e65",
     "packages": [
         {
             "name": "brick/math",
@@ -4825,6 +4825,49 @@
             "time": "2022-05-21T13:33:31+00:00"
         },
         {
+            "name": "tasmidur/coupon",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/tasmidur/coupon",
+                "reference": "30630db0ed7740fe56da35fe2e4812837d94f99a"
+            },
+            "require": {
+                "illuminate/config": "^8.0|^9.0",
+                "illuminate/database": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tasmidur\\Coupon\\LaravelCouponServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tasmidur\\Coupon\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tasmidur",
+                    "email": "tasmidurrahman@example.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "description",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.4",
             "source": {
@@ -7753,7 +7796,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "tasmidur/coupon": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
